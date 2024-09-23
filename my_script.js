@@ -1,1 +1,3 @@
-alert('Hello, welcome to my course!!!');
+alert('Hello, welcome to the course!!!');
+
+document.getElementById('nome').value = 'Oi'
