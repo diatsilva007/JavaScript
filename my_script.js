@@ -5,4 +5,4 @@
  Atualizar o valor desse elemento com uma string
 */
 
-document.getElementById('nome').value = 'Hi'
+document.getElementById('nome').value = 'Hi buddy!';
