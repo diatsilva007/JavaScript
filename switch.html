@@ -4,42 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>If Else - Operadores lógicos</title>
+    <title>Switch</title>
 
     <script>
 
-        // false = false
-        /*if (!(5 >= 2)) {
-            document.write('VERDADEIRO!');
-        } else {
-            document.write('FALSO!');
-        }*/
+        var parametro = prompt('Digite um número')
 
-        var nota = prompt('Digite a nota do aluno(a):');
-        var faltas = prompt('Digite a quantidade de faltas:');
+        switch (parseInt(parametro)) {  
+            case 1:
+                //se parametro === 1
+                document.write('Valor do parametro é 1');
+                break
 
-        var media = 7
-        var faltas_maximas = 15
+            case 2:
+                //se parametro === 2
+                document.write('Valor do parametro é 2');
+                break
 
-        /*if (nota >= media && faltas <= faltas_maximas) {    
-            document.write('APROVADO!');
-        //lógica
-        } else {
-            document.write('REPROVADO!');   
-        //lógica    
-        }*/
-
-        var resultado = (nota >= media && faltas <= faltas_maximas) ? 'Aprovado!' : 'Reprovado!'
-
-        document.write(resultado);
+            default:
+            //caso não seja nenhum dos casos acima
+            document.write('Default');
+        }
 
     </script>
 
- 
-</head> 
+
+</head>
 
 <body>
 
 </body>
 
-</html>     
+</html>
