@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Eventos mouse</title>
+
+    <script>
+
+        function acao1() {
+            alert('Elemento clicado')
+        }
+
+        function acao2() {
+            alert('O cursor do mouse deixou a região do elemento')
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div onclick="alert('Teste')" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--Quando elemento for clicado será disparado o alert test.-->
+
+    <div onclick="acao('Teste')" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--Quando elemento for clicado será disparado o acao test da função acao.-->
+
+    <div ondblclick="acao('Teste')" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--Quando elemento for clicado 2x será disparado a função acao.-->
+
+    <div onmouseup="acao('Teste')" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--É disparado quando clique do elemento for liberado.-->
+
+    <div onmouseover="acao('Teste')" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--É acionado quando cursor do mouse sobrepõe a região do elemento dentro do browser.-->
+
+    <div onmouseout="acao('Teste')" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--É disparado quando cursor do mouse sai da região da página ocupada pelo elemento html.-->
+
+    <div onclick="acao1()" onmouseout="acao2()" style="background: black; height: 150px; width: 150px;"></div> <br><br>
+    <!--Combinados duas ações diferentes: OBS: Para que isso ocorra é necessário ter duas funcoes com nome de cada função acao-->
+
+
+</body>
+
+</html>
