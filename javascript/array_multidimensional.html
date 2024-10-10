@@ -3,24 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <title>JavaScript - Array multidimensional</title>
+  <title>JavaScript</title>
 
-
+  
   <script>
-    var lista_frutas = Array()
+    var lista_coisas = Array()
 
-    //var lista_frutas = []
+    lista_coisas['frutas'] = Array('Banana', 'Maçã', 'Morango', 'Uva')
+    
+    // lista_coisas['frutas'][1] = 'Banana'
+    // lista_coisas['frutas'][2] = 'Maçã'
+    // lista_coisas['frutas'][3] = 'Morango'
+    // lista_coisas['frutas'][4] = 'Uva'
 
-    lista_frutas[1] = 'Banana'
-    lista_frutas[2] = 'Maçã'
-    lista_frutas[3] = 'Morango'
-    lista_frutas[4] = 'Uva'
+    lista_coisas['pessoas'] = []
+    lista_coisas['pessoas']['a'] = 'João'
+    lista_coisas['pessoas']['b'] = 'José'
+    lista_coisas['pessoas']['c'] = 'Maria'
 
-    // var lista_frutas = Array('Banana', 'Maçã', 'Morango', 'Uva')
-    //var lista_frutas = ['Banana', 'Maçã', 'Morango', 'Uva']
-
-    console.log(lista_frutas)
-
+    console.log(lista_coisas)
+    console.log(lista_coisas['frutas'][3])
+    document.write(lista_coisas['frutas'][3])
+    document.write(lista_coisas['pessoas']['b'])
   </script>
 
 </head>
