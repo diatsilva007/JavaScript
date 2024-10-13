@@ -9,23 +9,18 @@
 
     <script>
 
-        /* 
-        var x = 1
-        while (condicao) {
-        
-        }
-    
-        var x = 1
-        do {
-        
-        } while (condicao)
-        */
+        var listas_frutas = Array();
 
-        for (var x = 10; x >= 0; x -= 4) {
-            document.write(x + '<br />')
+        listas_frutas[0] = 'Banana'
+        listas_frutas[1] = 'Maçã'
+        listas_frutas[2] = 'Morango'
+        listas_frutas[3] = 'Uva'
 
-            //break
-            //continue
+        var y = 0
+
+        while (y < listas_frutas.length) {
+            document.write(listas_frutas[y] + '<br>')
+            y++;
         }
 
     </script>
