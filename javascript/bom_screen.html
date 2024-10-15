@@ -7,7 +7,17 @@
 
     <script>
 
-        
+        var altura = window.screen.availHeight
+        var largura = window.screen.availWidth
+
+        //document.write('Altura do navegador é: ' + altura)
+        //document.write('<br />Largura do navegador é: ' + largura)
+
+        if (largura < 500) {
+            document.write('Lógica para impressão do menu versão mobile') // Lógica na qual irá mostrar se a tela for < 500 na versão mobile
+        } else { 
+            document.write('Lógica para impressão do menu versão desktop') // Lógica na qual irá mostrar se a tela for > 500 na versão desktop
+        }
 
     </script>
 
@@ -15,7 +25,7 @@
 
 <body>
 
-    
+
 
 </body>
 
