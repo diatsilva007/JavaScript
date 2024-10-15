@@ -4,27 +4,42 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript - Laços na prática 2  </title>
+    <title>JavaScript - Laços na prática 2 </title>
 
 
     <script>
 
-        // var listaConvidados = ['Diogo', 'Solange', 'José', 'Nina', 'Luna']
+       // var listaFuncionarios = ['Diogo', 'José', 'Solange', 'Nina', 'Luna',]
 
-        var listaConvidados = Array();
+       var listaFuncionarios = Array();
 
-        listaConvidados['a'] = 'Diogo';
-        listaConvidados[10] = 'Solange';
-        listaConvidados['cachorro'] = 'José';
-        listaConvidados[-1] = 'Nina';
-        listaConvidados[true] = 'Luna';
+       listaFuncionarios['x'] = 'Diogo';
+       listaFuncionarios[false] = 'José';
+       listaFuncionarios[3] = 'Solange';
+       listaFuncionarios[10] = 'Nina';
+       listaFuncionarios[12] = 'Luna';
 
-            console.log(listaConvidados)
-
-        for (var x in listaConvidados) {
-            console.log(' Indice ' + x + ' valor ' + listaConvidados[x])
+        var f = function(valor, indice) {
+            console.log(valor, indice)
         }
 
+        listaFuncionarios.forEach(f)
+
+       /* console.log(listaFuncionarios)
+        document.write(listaFuncionarios[0])
+
+        listaFuncionarios.forEach(function (valor, indice, array) {
+            // lógica
+            console.log('indice ' + indice + ' | valor: ' + valor)
+
+            if (valor == 'Diogo') {
+                array[indice] = 'Um novo valor'
+            }
+        })
+
+        console.log(listaFuncionarios)
+        document.write('<br>' + listaFuncionarios[0])
+        */
 
     </script>
 
