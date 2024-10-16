@@ -3,11 +3,23 @@
 
 <head>
     <meta charset="utf-8">
-    <title>JavaScript - Bom, location</title>
+    <title>JavaScript - Bom, timing</title>
 
     <script>
 
-        //window.location.href = "http://www.google.com"; //abre a página do google no navegador
+        //setTimeout(function() { document.write('Test') }, 2000) //será mostrado no navegador após 2 segundos, a palavra teste.
+
+        var i = 5
+
+        var x = setInterval(function () {
+            document.write(i + '<br>');
+            i--
+
+            if (i === 0) {
+                //window.location.reload(); // atualiza a página no navegador após 5 segundos...
+                clearInterval(x); // após 5 segundos, não atualizará a página no navegador...
+            }
+        }, 1000);
 
     </script>
 
@@ -15,13 +27,7 @@
 
 <body>
 
-    <button onclick="window.location.href = 'http://www.google.com' "> <!--Botão que acessa o site do google-->
-        Acessar Google
-    </button>
 
-    <button onclick="window.location.href = 'http://https://www.google.com/intl/pt-BR/gmail/about/' "> <!--Botão que acessa site do gmail-->
-        Acessar Faus
-    </button>
 
 </body>
 
