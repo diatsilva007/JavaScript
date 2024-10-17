@@ -8,6 +8,7 @@ function ajustaTamanhoPalcoJogo() {
      console.log(largura, altura)
 }
 
+// Lógica para posição randômica do mosquito na página html
 ajustaTamanhoPalcoJogo()
 
 function posicaoRandomica() {
