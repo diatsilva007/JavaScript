@@ -22,7 +22,7 @@ var cronometro = setInterval(function () {
      if (tempo < 0) {
           clearInterval(cronometro)
           clearInterval(criaMosca)
-          alert('Parabéns, você venceu!')
+          alert('Parabéns!, você venceu...')
           
      } else {
           document.getElementById('cronometro').innerHTML = tempo
