@@ -2,6 +2,8 @@
 var altura = 0;
 var largura = 0;
 var vidas = 1;
+var tempo = 15;
+
 function ajustaTamanhoPalcoJogo() {
      altura = window.innerHeight
      largura = window.innerWidth
@@ -12,6 +14,22 @@ function ajustaTamanhoPalcoJogo() {
 // Lógica para posição randômica do mosquito na página html
 ajustaTamanhoPalcoJogo()
 
+// Lógica para cronômetro
+var cronometro = setInterval(function () {
+
+     tempo -= 1;
+
+     if (tempo < 0) {
+          clearInterval(cronometro)
+          clearInterval(criaMosca)
+          alert('Parabéns, você venceu!')
+          
+     } else {
+          document.getElementById('cronometro').innerHTML = tempo
+     }
+
+}, 1000)
+
 function posicaoRandomica() {
 
      // Remover o mosquito anterior (caso exista)
@@ -20,12 +38,12 @@ function posicaoRandomica() {
 
           //console.log('elemento selecionado foi: v' + vidas)
 
-               if (vidas > 3) {
-                    window.location.href = 'fim_de_jogo.html'
-               } else {
-                    document.getElementById('v' + vidas).src = "images/coracao_vazio.png"
+          if (vidas > 3) {
+               window.location.href = 'fim_de_jogo.html'
+          } else {
+               document.getElementById('v' + vidas).src = "images/coracao_vazio.png"
 
-               }
+          }
 
           vidas++
      }

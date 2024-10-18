@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <script src="game.js"></script>
 
 </head>
+
 <body onresize="ajustaTamanhoPalcoJogo()">
 
     <div class="painel">
@@ -19,16 +21,22 @@
         </div>
 
         <div class="cronometro">
-            Tempo restante: ?
+            Tempo restante: <span id="cronometro"></span>
         </div>
     </div>
 
     <script>
+
+        document.getElementById('cronometro').innerHTML = tempo
+
+
         posicaoRandomica();
 
-        setInterval(function() {
+        var criaMosca = setInterval(function () {
             posicaoRandomica();
         }, 2000);
+        
     </script>
 </body>
+
 </html>
