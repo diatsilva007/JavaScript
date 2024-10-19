@@ -1,7 +1,12 @@
+
 body {
    background-image: url(../images/bg.jpg);
    background-repeat: no-repeat;
    background-size: cover;
+}
+
+html {
+   cursor: url(images/mata_mosquito.png) 30 30 auto;
 }
 
 /* Classe mosquito (mosquito que aparecerá na tela). */
@@ -15,7 +20,7 @@ body {
    height: 70px; // largura mosquito2 70px
 }
 
-.mosquito3 {
+.mosquito3 {   
    width: 90px; // largura mosquito3 90px
    height: 90px; // largura mosquito3 90px
 }  
