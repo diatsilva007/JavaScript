@@ -4,6 +4,24 @@ var largura = 0;
 var vidas = 1;
 var tempo = 15;
 
+var criaMosquitoTempo = 1500;
+
+// Lógica para a velocidade em que os mosquitos aparecem na tela
+var nivel = window.location.search
+nivel = nivel.replace('?', '')
+
+if (nivel === 'normal') {
+     //1700
+     criaMosquitoTempo = 1500;
+} else if (nivel === 'dificil') {
+     //1200
+     criaMosquitoTempo = 1150;
+}else if (nivel === 'chucknorris') {
+     //800
+     criaMosquitoTempo = 750;
+}
+  
+
 function ajustaTamanhoPalcoJogo() {
      altura = window.innerHeight
      largura = window.innerWidth
