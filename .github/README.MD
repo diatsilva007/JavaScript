@@ -1,2 +1,2 @@
 # App mata mosquito
-### Deploy: https://vercel.com/diatsilva-projects/game-mata-mosquito
+### Deploy: https://game-mata-mosquito-mu.vercel.app/
