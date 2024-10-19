@@ -1,3 +1,6 @@
+html {
+   cursor: url(../images/mata_mosquito.png) 30 30, auto;
+}
 
 body {
    background-image: url(../images/bg.jpg);
@@ -5,24 +8,20 @@ body {
    background-size: cover;
 }
 
-html {
-   cursor: url(images/mata_mosquito.png) 30 30 auto;
-}
-
 /* Classe mosquito (mosquito que aparecerá na tela). */
 .mosquito1 {
-   width: 50px; // largura mosquito1 50px
-   height: 50px; // largura mosquito1 50px
+   width: 50px; /* largura mosquito1 50px */
+   height: 50px; /* largura mosquito1 50px */
 }
 
 .mosquito2 {
-   width: 70px; // largura mosquito2 70px
-   height: 70px; // largura mosquito2 70px
+   width: 70px; /* largura mosquito2 70px */
+   height: 70px; /* largura mosquito2 70px */
 }
 
 .mosquito3 {   
-   width: 90px; // largura mosquito3 90px
-   height: 90px; // largura mosquito3 90px
+   width: 90px; /* largura mosquito3 90px */ 
+   height: 90px; /* largura mosquito3 90px */
 }  
 
 .ladoA {
